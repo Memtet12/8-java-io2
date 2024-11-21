@@ -28,7 +28,10 @@ public class Task01Main {
                     }
                 }
             }
-
+            int exitCode = process.waitFor();
+            if (exitCode != 0) {
+                throw new RuntimeException("ffprobe command failed with exit code " + exitCode);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
