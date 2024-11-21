@@ -28,7 +28,7 @@ public class Task01Main {
                     }
                 }
             }
-            int exitCode = process.waitFor();
+
         } catch (Exception e) {
             e.printStackTrace();
         }
